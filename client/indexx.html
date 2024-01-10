@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="icon" type="icon" href="/client/sppu.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="c1">
+            <div class="headl">
+                <h2><span id="img"><img src="/client/sppu log.jpg" height="33rem" width="48rem"></span> Online Result Display System</h2>
+            </div>
+            <div class="menu">
+                <p id="i1"><span class="pic"><img src="/client/pngwing.com (4).png" height="13rem"
+                            width="16rem"></span>Dashboard</p>
+                <p><span class="pic"><img src="/client/pngwing.com (5).png" height="16rem" width="18rem"></span>Home</p>
+
+            </div>
+        </div>
+        <div class="c2">
+            <div class="login">
+                <div class="head">
+                    <h4>BACHELOR OF ARCHITECTURE(REV.2015)(Final Year)- OCT 2023</h4>
+                    <div id="cross">
+                        <img src="/client/pngwing.com (6).png " height="12rem" width="12rem">
+                    </div>
+
+                </div>
+                <form>
+                    <div class="data">
+
+                        <div class="form">
+                            <div class="d1">
+                                <lable class="lable">
+                                    Enter Seat No
+                                </lable>
+                                <input required>
+                            </div>
+                            <div class="d1">
+                                <lable class="lable">Enter Mother Name</lable>
+                                <input required>
+                            </div>
+                        </div>
+                        <button type="button" onclick="show()" id="btnID">Check Result</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <img id="result" src="https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3.png" alt="GFG image" />
+    </div>
+    <script>
+        function show() {
+
+            url = "/client/pngwing.com (4).png";
+            img = '<img src="' + url + '">';
+            popup = window.open();
+            popup.document.write(img);
+            popup.print();
+        }
+    </script>
+</body>
+
+</html>
